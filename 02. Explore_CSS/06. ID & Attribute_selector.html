@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Styling</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 150px;
+            align-items: center;
+        }
+
+        .FromContainer {
+            background: white;
+            border: black 2px solid;
+            padding: 50px;
+        }
+        input {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4vh;
+            background-color: #f9f9f9;
+        }
+        input[type="password"] {
+            border: rgba(189, 9, 9, 0.417) 2px solid;
+        }
+        
+        #loginBtn {
+            background-color: rgb(8, 163, 229);
+            color: white;
+            height: 5vh;
+            width: 10vw;
+            font-size: 16px;
+            border: black 2px solid;
+            cursor: pointer;
+        }
+        #loginBtn:hover {
+            background-color: rgb(2, 119, 173);
+        }
+
+    </style>
+    <div class="FromContainer">
+        <h3>Login From</h3>
+        <input type="text" placeholder="Enter Username">
+
+        <input type="password" placeholder="Enter Password">
+        
+        <button button id="loginBtn">Login</button>
+
+    </div>
+</body>
+</html>
